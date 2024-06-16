@@ -1,0 +1,3 @@
+Pour obtenir le résultat final il suffit d'éxecuter le Makefile. Ceci va créer un gif nommé "resultat.gif". Celui-ci va se créer dans le dossier où sont tous les fichiers.
+
+Le fichier "main.cpp" permet de modifier les constantes intrinsèques aux matériaux que l'on veut utiliser comme K, rho, et C. Ou encore modifier la taille du domaine, le pas dx et dy, les températures aux bords et initiales, le temps final et le pas de temps dt. On peut aussi y modifier la position des murs, allumer ou éteindre les radiateurs, ouvrir ou fermer les fenetres à l'aide d'un booléen.
