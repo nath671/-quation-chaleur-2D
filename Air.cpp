@@ -39,8 +39,8 @@ double **Air::vitesses(Domaine2D d, Mur *m, Fenetre *f, Radiateur *r)
             for (int k = 0; k < m->get_nb_murs(); k++)
             {
                 // mur ?
-                if (x >= m[k].get_xmin() and x <= m[k].get_xmax() and
-                    y >= m[k].get_ymin() and y <= m[k].get_ymax())
+                if (x >= m[k].get_xmin() && x <= m[k].get_xmax() &&
+                    y >= m[k].get_ymin() && y <= m[k].get_ymax())
                 {
                     tab_v0[j][i] = 0;
 
@@ -57,15 +57,15 @@ double **Air::vitesses(Domaine2D d, Mur *m, Fenetre *f, Radiateur *r)
             for (int k = 0; k < f->get_nb_fenetre(); k++)
             {
                 // fenetre ?
-                if (x >= f[k].get_xmin() and x <= f[k].get_xmax() and
-                    y >= f[k].get_ymin() and y <= f[k].get_ymax() and f[k].get_bool() == true)
+                if (x >= f[k].get_xmin() && x <= f[k].get_xmax() &&
+                    y >= f[k].get_ymin() && y <= f[k].get_ymax() && f[k].get_bool() == true)
                 {
                     tab_v0[j][i] = v0;
                 }
             }
 
             // si aucune fenetre n'est ouverte alors pas de vitesse dans la piece
-            if (f[0].get_bool() == false and f[1].get_bool() == false)
+            if (f[0].get_bool() == false && f[1].get_bool() == false)
             {
                 tab_v0[j][i] = 0;
             }
