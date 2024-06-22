@@ -46,8 +46,8 @@ double **Piece::Amenagement(double C_air, double D_air, Domaine2D d)
             for (int k = 0; k < murs->get_nb_murs(); k++)
             {
                 // est ce que on est dans un des murs ?
-                if (x >= murs[k].get_xmin() and x <= murs[k].get_xmax() and
-                    y >= murs[k].get_ymin() and y <= murs[k].get_ymax())
+                if (x >= murs[k].get_xmin() && x <= murs[k].get_xmax() &&
+                    y >= murs[k].get_ymin() && y <= murs[k].get_ymax())
                 {
                     tab_C[j][i] = murs[k].get_C();
                     tab_D[j][i] = murs[k].get_D();
@@ -71,8 +71,8 @@ double **Piece::Amenagement(double C_air, double D_air, Domaine2D d)
             for (int k = 0; k < fenetres->get_nb_fenetre(); k++)
             {
                 // est ce que on est dans une fenetre ?
-                if (x >= fenetres[k].get_xmin() and x <= fenetres[k].get_xmax() and
-                    y >= fenetres[k].get_ymin() and y <= fenetres[k].get_ymax() and
+                if (x >= fenetres[k].get_xmin() && x <= fenetres[k].get_xmax() &&
+                    y >= fenetres[k].get_ymin() && y <= fenetres[k].get_ymax() &&
                     fenetres[k].get_bool() == true)
                 {
                     tab_C[j][i] = fenetres[k].get_C();
@@ -91,8 +91,8 @@ double **Piece::Amenagement(double C_air, double D_air, Domaine2D d)
             for (int p = 0; p < rad->get_nb_rad(); p++)
             {
                 // est ce qu'on est dans un radiateur ?
-                if (x >= rad[p].get_xmin() and x <= rad[p].get_xmax() and
-                    y >= rad[p].get_ymin() and y <= rad[p].get_ymax() and
+                if (x >= rad[p].get_xmin() && x <= rad[p].get_xmax() &&
+                    y >= rad[p].get_ymin() && y <= rad[p].get_ymax() &&
                     rad[p].get_bool() == true)
                 {
                     tab_W[j][i] = rad[p].get_W();
